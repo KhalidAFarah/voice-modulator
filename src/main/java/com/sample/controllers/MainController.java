@@ -128,13 +128,13 @@ public class MainController {
 
 
     }
-    public static void quicksort(byte[] a, int fra, int til){
-        if(til-fra <= 0)
+    public static void quicksort(byte[] a, int from, int to){
+        if(to-from <= 0)
             return;
 
-        int p = til;
-        int placement = fra;
-        for(int i = fra; i < til; i++){
+        int p = to;
+        int placement = from;
+        for(int i = from; i < to; i++){
             if(a[i] < a[p]){
 
                 byte temp = a[placement];
@@ -150,8 +150,8 @@ public class MainController {
         a[placement] = temp;
 
 
-        quicksort(a, fra, placement-1);
-        quicksort(a, placement+1, til);
+        quicksort(a, from, placement-1);
+        quicksort(a, placement+1, to);
 
 
     }
