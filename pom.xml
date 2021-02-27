@@ -47,7 +47,7 @@
                     <mainClass>com.sample.App</mainClass>
                     <launcher>launch</launcher>
                     <compress>2</compress>
-                    <jlinkZipName>Muter</jlinkZipName>
+                    <jlinkZipName>Voice-modulator</jlinkZipName>
                 </configuration>
             </plugin>
             <plugin>
@@ -61,7 +61,7 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <finalName>Muter</finalName>
+                            <finalName>Voice-Modulator</finalName>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.sample.App</mainClass>
